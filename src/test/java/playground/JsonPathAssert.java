@@ -18,7 +18,7 @@ public final class JsonPathAssert<T> {
         return new JsonPathAssert<T>(expression, matcher);
     }
 
-    public void testWith(String json) {
+    public void runAgainst(String json) {
         MatcherAssert.assertThat(evaluateExpression(json), matcher);
     }
 
